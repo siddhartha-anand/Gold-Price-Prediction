@@ -12,7 +12,7 @@ st.set_page_config(layout='wide')
 st.title('Gold Price Prediction')
 st.write('This app predicts the price of Gold')
 
-gold_data = pd.read_csv('C:\\Users\\Siddhartha Anand\\Desktop\\Gold Price Prediction\\gld_price_data.csv')
+gold_data = pd.read_csv('gld_price_data.csv')
 gold_data['Date'] = pd.to_datetime(gold_data['Date']) 
 
 # Calculate correlations, excluding non-numeric columns
